@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../styles/Home.module.css';
 
 const About = () => {
   return (
@@ -9,10 +8,10 @@ const About = () => {
         <title>About Us</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main className="flex flex-col items-center justify-center min-h-screen py-2">
+        <h1 className="text-6xl font-bold">
           <Link href="/">
-            <a>Go Back</a>
+            <a className="text-blue-600">Go Back</a>
           </Link>
         </h1>
       </main>
