@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About Us</title>
+        <title>About Uss</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center justify-center min-h-screen py-2">
