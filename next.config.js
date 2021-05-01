@@ -3,4 +3,7 @@ module.exports = {
     webpack5: true,
     strictPostcssConfiguration: true,
   },
+  images: {
+    domains: ['advisewiseassociates.com'],
+  },
 };
