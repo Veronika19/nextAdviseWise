@@ -28,7 +28,7 @@ export default function Team() {
               viewBox="90 0 110 2"
               fill="none"
             >
-              <rect width="235" height="2" fill="#d35063"></rect>
+              <rect width="435" height="2" fill="#d35063"></rect>
             </svg>
             <h2 className="text-gray-500 mb-3 font-bold">{team.designation}</h2>
             <p className="mb-4 leading-relaxed">{team.desc1}</p>
