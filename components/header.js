@@ -273,13 +273,13 @@ export default function Home() {
                   >
                     <Link href="/about">
                       <a>
-                        <span className="ml-2 font-bold">About Uss</span>
+                        <span className="ml-2 font-bold">About Us</span>
                       </a>
                     </Link>
                   </li>
                   <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                    <a href="/projects">
-                      <span className="ml-2 font-bold">Projects</span>
+                    <a href="/our-expertise">
+                      <span className="ml-2 font-bold">Our Expertise</span>
                     </a>
                   </li>
                   <li
