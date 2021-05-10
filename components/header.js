@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="2xl:mx-auto 2xl:container xl:px-0 px-6 bg-gray-800">
+      <div className="2xl:mx-auto 2xl:container xl:px-0 bg-gray-800">
         <div>
           <nav className="2xl:px-0 xl:px-16 px-0">
             <div className="hidden lg:flex items-center justify-between">
@@ -45,7 +45,7 @@ export default function Home() {
                     <a onClick={() => setShow1(false)}>The Firm</a>
                   </Link>
                   <div className="pl-2 mt-2">
-                    <div className="cursor-pointer" onClick={() => setShow1(!show1)}>
+                    <div className="cursor-pointer" onMouseEnter={() => setShow1(!show1)}>
                       {show1 ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +84,7 @@ export default function Home() {
                       <ul
                         className="bg-gray-200 shadow-lg  duration-300 opacity-100 absolute z-30 -ml-24 mt-2 rounded w-44 flex-col"
                         id="listHolder1"
+                        onMouseLeave={() => setShow1(!show1)}
                       >
                         <li className="hover:opacity-75 font-bold text-sm text-red px-2 py-2 hover:bg-red hover:text-gray-800">
                           <Link href="/about">
@@ -108,6 +109,17 @@ export default function Home() {
                 >
                   <Link href="/about">
                     <a onClick={() => setShow1(false)}>About Us</a>
+                  </Link>
+                </li>
+                <li
+                  className={
+                    router.pathname == '/our-expertise'
+                      ? 'text-lg font-bold text-red tracking-wide ml-8'
+                      : 'text-lg text-white tracking-wide ml-8'
+                  }
+                >
+                  <Link href="/our-expertise">
+                    <a onClick={() => setShow1(false)}>Our Expertise</a>
                   </Link>
                 </li>
                 {/* <li

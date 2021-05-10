@@ -9,10 +9,10 @@ export default function Home() {
       <Modal title="Welcome!" text="Thank you for joining the Gust community" />
       <div className="flex flex-col items-center min-h-screen py-2">
         <Head>
-          <title>Create Next App</title>
+          <title>AWA | ADVISE WISE ASSOCIATES</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main className="flex flex-col items-center flex-1 px-8 text-center">
+        <main className="flex flex-col items-center flex-1 text-center">
           <section className="text-gray-600 body-font">
             <div className="container px-2 py-2 mx-auto">
               <div className="lg:w-full mx-auto flex flex-wrap">
