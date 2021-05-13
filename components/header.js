@@ -102,17 +102,6 @@ export default function Home() {
                 </li>
                 <li
                   className={
-                    router.pathname == '/about'
-                      ? 'text-lg font-bold text-red tracking-wide ml-8'
-                      : 'text-lg text-white tracking-wide ml-8'
-                  }
-                >
-                  <Link href="/about">
-                    <a onClick={() => setShow1(false)}>About Us</a>
-                  </Link>
-                </li>
-                <li
-                  className={
                     router.pathname == '/our-expertise'
                       ? 'text-lg font-bold text-red tracking-wide ml-8'
                       : 'text-lg text-white tracking-wide ml-8'
@@ -120,6 +109,28 @@ export default function Home() {
                 >
                   <Link href="/our-expertise">
                     <a onClick={() => setShow1(false)}>Our Expertise</a>
+                  </Link>
+                </li>
+                <li
+                  className={
+                    router.pathname == '/media'
+                      ? 'text-lg font-bold text-red tracking-wide ml-8'
+                      : 'text-lg text-white tracking-wide ml-8'
+                  }
+                >
+                  <Link href="/media">
+                    <a onClick={() => setShow1(false)}>Media</a>
+                  </Link>
+                </li>
+                <li
+                  className={
+                    router.pathname == '/about'
+                      ? 'text-lg font-bold text-red tracking-wide ml-8'
+                      : 'text-lg text-white tracking-wide ml-8'
+                  }
+                >
+                  <Link href="/about">
+                    <a onClick={() => setShow1(false)}>About Us</a>
                   </Link>
                 </li>
                 {/* <li
@@ -268,6 +279,16 @@ export default function Home() {
                     </Link>
                   </li>
                   <li
+                    className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none"
+                    onClick={() => MenuHandler(false)}
+                  >
+                    <Link href="/our-expertise">
+                      <a>
+                        <span className="ml-2 font-bold">Our Expertise</span>
+                      </a>
+                    </Link>
+                  </li>
+                  <li
                     className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center"
                     onClick={() => MenuHandler(false)}
                   >
@@ -277,34 +298,25 @@ export default function Home() {
                       </a>
                     </Link>
                   </li>
-                  <li className="flex cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                    <a href="/our-expertise">
-                      <span className="ml-2 font-bold">Our Expertise</span>
-                    </a>
-                  </li>
                   <li
                     className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center"
                     onClick={() => MenuHandler(false)}
                   >
-                    <a href="/testimonials">
-                      <span className="ml-2 font-bold">Clients</span>
-                    </a>
-                  </li>
-                  <li
-                    className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center"
-                    onClick={() => MenuHandler(false)}
-                  >
-                    <a href="/team">
-                      <span className="ml-2 font-bold">Team</span>
-                    </a>
+                    <Link href="/team">
+                      <a>
+                        <span className="ml-2 font-bold">Team</span>
+                      </a>
+                    </Link>
                   </li>
                   <li
                     className="flex flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center"
                     onClick={() => MenuHandler(false)}
                   >
-                    <a href="/contacts">
-                      <span className="ml-2 font-bold">Contacts</span>
-                    </a>
+                    <Link href="/media">
+                      <a>
+                        <span className="ml-2 font-bold">Media</span>
+                      </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="xl:hidden">
